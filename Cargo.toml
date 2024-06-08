@@ -1,0 +1,14 @@
+[package]
+name = "hello_wgpu"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytemuck = { version = "1.16.0", features = ["derive"] }
+anyhow = "1.0.86"
+pollster = "0.3.0"
+wgpu = { version = "0.20.0", default-features = false, features = [
+    "webgl",
+    "wgsl",
+] }
+winit = "0.30.0"
